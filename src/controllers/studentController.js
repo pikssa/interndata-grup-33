@@ -32,7 +32,7 @@ let createStudent = async function (req, res) {
     }
 
     if (!isvalid(collegeId)) {
-      return res.status(400).send({ status: false, msg: "Email is required" })
+      return res.status(400).send({ status: false, msg: "id is required" })
     }
 
     if (!isvalid(mobile)) {
