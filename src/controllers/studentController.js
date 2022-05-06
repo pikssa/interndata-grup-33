@@ -85,7 +85,7 @@ StudentData.save()
 
 let collegeDetails = async function (req, res) {
   try {
-    let collegeName = req.query.name;
+    let collegeName = req.query.collegeName;
      if(!collegeName){
       return res.status(400).send({ status: false, msg: "Enter College Name" })
      }
