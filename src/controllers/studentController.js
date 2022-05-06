@@ -19,7 +19,7 @@ let createStudent = async function (req, res) {
 
     let requiredBody = req.body;
     if (!isvalidRequestBody(requiredBody)) {
-      return res.send({ status: false, msg: "please provide author details" })
+      return res.send({ status: false, msg: "please provide details" })
     }
 
     let { name, email, collegeId, mobile, isDeleted } = req.body
